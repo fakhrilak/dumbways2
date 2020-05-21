@@ -1,0 +1,24 @@
+CREATE DATABASE dumbways;
+USE dumbways;
+CREATE TABLE course(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR (50) NOT NULL,
+    thumbnail VARCHAR(50) NOT NULL,
+    id_author VARCHAR (100) NOT NULL,
+    duration VARCHAR (50) NOT NULL,
+    description VARCHAR (100) NOT NULL
+);
+USE dumbways;
+CREATE TABLE content(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR (50) NOT NULL,
+    video_link VARCHAR (100) NOT NULL,
+    type VARCHAR (100) NOT NULL,
+    id_course VARCHAR (100) NOT NULL
+);
+USE dumbways;
+CREATE TABLE author(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR (50) NOT NULL
+);
+
