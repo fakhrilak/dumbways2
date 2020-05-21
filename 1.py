@@ -3,8 +3,9 @@ def no1(a , b):
         a = a - a*10/100
         b = int(b-a)
         print("total kembalian",b)
-        hasil=b/50000
+        hasil=int(b/50000)
         sisa=b%50000
+        print (hasil, "x 50.0000")
         if (sisa>=20000):
             hasil=int(sisa/20000)
             sisa=sisa%20000
@@ -23,8 +24,9 @@ def no1(a , b):
     else:
         b = b-a
         print("total kembalian",b)
-        hasil=b/50000
+        hasil=int(b/50000)
         sisa=b%50000
+        print (hasil, "x 50.0000")
         if (sisa>=20000):
             hasil=int(sisa/20000)
             sisa=sisa%20000
